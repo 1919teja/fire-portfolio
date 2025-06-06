@@ -1,8 +1,10 @@
+
 import resumeData from '@/lib/resume-data';
 import { Button } from '@/components/ui/button';
 import { SectionContainer } from '@/components/portfolio/container';
 import { Github, Linkedin, Mail, Phone, Globe, Download } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function HeroSection() {
   const { name, title, summary, contact } = resumeData;
@@ -16,8 +18,18 @@ export default function HeroSection() {
   ];
 
   return (
-    <SectionContainer id="hero" className="bg-gradient-to-br from-primary/5 via-background to-background pt-20 md:pt-32 text-center">
-      <div className="max-w-3xl mx-auto">
+    <SectionContainer id="hero" className="bg-gradient-to-br from-primary/5 via-background to-background pt-20 md:pt-28 text-center">
+      <div className="max-w-3xl mx-auto flex flex-col items-center">
+        <div className="mb-6">
+          <Image
+            src="/profile-pic.jpg"
+            alt={name}
+            width={160}
+            height={160}
+            className="rounded-full shadow-xl border-4 border-accent object-cover"
+            priority
+          />
+        </div>
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary mb-4 tracking-tight">
           {name}
         </h1>
