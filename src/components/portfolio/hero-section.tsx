@@ -28,6 +28,7 @@ export default function HeroSection() {
             height={160}
             className="rounded-full shadow-xl border-4 border-accent object-cover"
             priority
+            unoptimized={true} 
           />
         </div>
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary mb-4 tracking-tight">
