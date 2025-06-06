@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import { CodeXml } from 'lucide-react';
 
@@ -12,7 +13,7 @@ export default function Header() {
           </span>
         </Link>
         <nav className="space-x-4 sm:space-x-6">
-          {['skills', 'experience', 'education', 'resume-tailor', 'contact'].map((item) => (
+          {['skills', 'experience', 'education', 'projects', 'resume-tailor', 'contact'].map((item) => (
             <a
               key={item}
               href={`#${item}`}

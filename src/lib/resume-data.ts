@@ -27,6 +27,20 @@ export interface SkillCategory {
   skills: string[];
 }
 
+export interface ProjectLink {
+  label: string;
+  url: string;
+  iconName?: 'Github' | 'Youtube' | 'Globe' | 'Link';
+}
+
+export interface ProjectEntry {
+  title: string;
+  subtitle?: string;
+  description: string;
+  technologies: string[];
+  links?: ProjectLink[];
+}
+
 export interface ResumeData {
   name: string;
   title: string;
@@ -35,6 +49,7 @@ export interface ResumeData {
   technicalCompetencies: SkillCategory[];
   experience: ExperienceEntry[];
   education: EducationEntry[];
+  projects: ProjectEntry[];
   fullResumeText: string;
 }
 
@@ -119,6 +134,39 @@ const saitejaKottapallyResume: ResumeData = {
       details: "CBSE",
       cgpa: "7.0 CGPA",
       graduationYear: "2015-2017",
+    },
+  ],
+  projects: [
+    {
+      title: "Web-Development GitHub Administration",
+      description: "Developed web application for GitHub Administration using JavaScript and shell scripting. Application helps on to search users and assign policies/roles/permissions and allocating projects as needed.",
+      technologies: ["JavaScript", "Shell Scripting", "Web Development"],
+      links: [{ label: "GitHub", url: "https://github.com/1919teja/git-admins-app", iconName: "Github" }],
+    },
+    {
+      title: "DeVops Automation QA-Portal",
+      description: "Developed QA portal, an organisation website developed on Python, shell, Jenkins , Ansible etc. Application helps to trigger automated functional/regression testing on targeted website in point of QA.",
+      technologies: ["Python", "Shell", "Jenkins", "Ansible", "DevOps"],
+      links: [{ label: "GitHub", url: "https://github.com/lotuswave/qaportal", iconName: "Github" }],
+    },
+    {
+      title: "Devops Payment Integration",
+      description: "Developed Payment integration micro-service on docker,JavaScript,AWS,Jenkins,Ansible etc stacks this application is payment gateway can be used to integrate for any application online UPI transactions.",
+      technologies: ["Docker", "JavaScript", "AWS", "Jenkins", "Ansible", "Microservices"],
+      links: [{ label: "GitHub", url: "https://github.com/1919teja/nodejs-api-dockerization-paytm", iconName: "Github" }],
+    },
+    {
+      title: "AI based assistant system for blind",
+      subtitle: "MHRD Smart India Hackathon finalist",
+      description: "Assisting system for blind people with artificial intelligence powered cameras and voice assisted bot which is build on python will act as self learning human replica to the person.",
+      technologies: ["Python", "AI", "Voice Assistant"],
+      links: [{ label: "Watch Demo", url: "https://www.youtube.com/watch?v=Rcc5g07ppsI", iconName: "Youtube" }],
+    },
+    {
+      title: "Quantum Computing - 8 bit qubit simulated chip",
+      subtitle: "JNTU College (Offsite)",
+      description: "Designed a prototype of quantum processor chip simulating multiple quantum algorithms using IBM quantum computer.",
+      technologies: ["Quantum Computing", "IBM Quantum", "Algorithm Simulation"],
     },
   ],
   fullResumeText: `SAITEJA KOTTAPALLY
