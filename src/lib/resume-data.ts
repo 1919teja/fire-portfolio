@@ -62,7 +62,7 @@ const saitejaKottapallyResume: ResumeData = {
     email: "kottapallysaitej@gmail.com",
     linkedin: "linkedin.com/in/1919teja",
     github: "github.com/1919teja",
-    website: "https://thesaiteja.in",
+    website: "https://thesaiteja.loopout.in/ ",
   },
   technicalCompetencies: [
     { name: "DevOps", skills: ["Amazon AWS", "Azure", "Docker", "Jenkins", "Kubernetes", "Terraform", "ArgoCD", "DevOps Practices", "Bash Scripting"] },
