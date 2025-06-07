@@ -4,51 +4,51 @@
 
 @layer base {
   :root {
-    /* "Elite Dark" Theme - Primary: Deep Blue/Purple, Accent: Gold/Amber, Background: Very Dark Gray */
-    --background: 220 15% 10%; /* Very Dark Desaturated Blue */
-    --foreground: 0 0% 95%; /* Light Gray for text */
+    /* "Modern Dark" Theme - Primary: Vibrant Blue, Accent: Bright Teal, Background: Very Dark Gray/Blue */
+    --background: 220 10% 8%; /* Very dark, slightly desaturated blue */
+    --foreground: 210 15% 90%; /* Light grey */
 
-    --card: 220 15% 15%; /* Slightly Lighter Dark Blue for cards */
-    --card-foreground: 0 0% 95%;
+    --card: 220 10% 12%; /* Darker than background */
+    --card-foreground: 210 15% 90%;
 
-    --popover: 220 15% 12%; /* Darker Popover */
-    --popover-foreground: 0 0% 95%;
+    --popover: 220 10% 10%; /* Even darker for popovers */
+    --popover-foreground: 210 15% 90%;
 
-    --primary: 260 60% 55%; /* Deep Purple/Blue */
-    --primary-foreground: 0 0% 98%; /* Almost White */
+    --primary: 210 80% 55%; /* Vibrant Blue */
+    --primary-foreground: 210 20% 98%; /* Almost White for primary text */
 
-    --secondary: 220 15% 20%; /* Dark Gray */
-    --secondary-foreground: 0 0% 90%;
+    --secondary: 220 10% 25%; /* Medium Dark Grey */
+    --secondary-foreground: 210 15% 80%;
 
-    --muted: 220 10% 25%; /* Muted Dark Gray */
-    --muted-foreground: 0 0% 60%;
+    --muted: 220 8% 20%; /* Muted Dark Grey */
+    --muted-foreground: 210 10% 55%;
 
-    --accent: 45 100% 50%; /* Gold/Amber */
+    --accent: 180 70% 45%; /* Bright Teal/Cyan */
     --accent-foreground: 220 20% 10%; /* Dark text for accent buttons */
 
-    --destructive: 0 70% 50%; /* Saturated Red */
+    --destructive: 0 70% 55%; /* Saturated Red */
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 15% 25%; /* Dark Border */
-    --input: 220 15% 22%; /* Dark Input Background */
-    --ring: 45 100% 60%; /* Brighter Gold/Amber for rings */
+    --border: 220 10% 20%; /* Dark Border */
+    --input: 220 10% 18%; /* Dark Input Background */
+    --ring: 180 70% 55%; /* Accent Teal/Cyan for rings */
 
-    --chart-1: 30 80% 60%; /* Orange */
-    --chart-2: 170 70% 45%; /* Teal */
-    --chart-3: 280 70% 65%; /* Purple */
+    --chart-1: 210 70% 60%; /* Lighter Blue */
+    --chart-2: 180 60% 50%; /* Teal/Cyan variant */
+    --chart-3: 260 60% 65%; /* Purple */
     --chart-4: 0 0% 70%;   /* Light Grey */
-    --chart-5: 50 90% 55%;  /* Yellow */
+    --chart-5: 45 80% 55%;  /* Gold/Yellow */
     --radius: 0.5rem;
 
-    /* Sidebar specific colors for dark elite theme */
-    --sidebar-background: 220 15% 12%; /* Consistent with popover */
-    --sidebar-foreground: 0 0% 85%; /* Slightly dimmer than main foreground */
-    --sidebar-primary: 45 100% 50%; /* Accent gold for primary elements in sidebar */
+    /* Sidebar specific colors for modern dark theme */
+    --sidebar-background: 220 10% 10%; /* Consistent with popover */
+    --sidebar-foreground: 210 15% 85%; /* Slightly dimmer than main foreground */
+    --sidebar-primary: 180 70% 45%; /* Accent teal for primary elements in sidebar */
     --sidebar-primary-foreground: 220 20% 10%;
-    --sidebar-accent: 220 15% 20%; /* Secondary dark gray for accents */
-    --sidebar-accent-foreground: 0 0% 90%;
-    --sidebar-border: 220 15% 20%;
-    --sidebar-ring: 45 100% 60%;
+    --sidebar-accent: 220 10% 20%; /* Secondary dark gray for accents */
+    --sidebar-accent-foreground: 210 15% 90%;
+    --sidebar-border: 220 10% 15%;
+    --sidebar-ring: 180 70% 55%;
   }
 
   /* Keep the light theme definition for potential future use or system preference */
