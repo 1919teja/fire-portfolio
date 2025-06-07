@@ -49,10 +49,16 @@ export default function HeroSection() {
             </Button>
           ))}
         </div>
-        {/* <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105">
-          <Download className="mr-2 h-5 w-5" />
-          Download CV
-        </Button> */}
+        <Button
+          size="lg"
+          className="bg-accent hover:bg-accent/90 text-accent-foreground transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105"
+          asChild
+        >
+          <a href="/Saiteja_Kottapally_Resume.pdf" download="Saiteja_Kottapally_Resume.pdf">
+            <Download className="mr-2 h-5 w-5" />
+            Download CV
+          </a>
+        </Button>
       </div>
     </SectionContainer>
   );
